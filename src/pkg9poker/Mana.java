@@ -33,13 +33,7 @@ public class Mana extends Carte {
                 }
             }
         }
-        /*Am un array de 5 carti de joc obiecte-fiecare cu int nr si string tip
-        c[0]=K negru. cand i=0 si j=1,
-        verifica daca Knegru=Knegru.Adevarat-deci ar trebui sa 
-        se efectueze c[1]=new Carte.Totusi ramane aceeasi- Knegru*/
-    
-
-   
+     
 
     
       
