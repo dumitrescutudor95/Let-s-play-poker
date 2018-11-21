@@ -3,8 +3,8 @@ package pkg9poker;
 
 public class Carte {
 
-    private int nr;
-    private String tip;
+    private final int nr;
+    private final String tip;
     String[] tipC = {"♥", "♠", "♦", "♣"};
 
     public Carte() {
@@ -25,8 +25,10 @@ public class Carte {
         return String.valueOf(nr)+tip;
         
     }
-    public boolean equals(Carte obj){
-        if( nr==obj.getNr() && tip==obj.getTip()){
+    @Override
+    public boolean equals(Object o){
+     
+        if( nr==((Carte)o).getNr() && tip==((Carte)o).getTip()){
             return true;
         }
         else {

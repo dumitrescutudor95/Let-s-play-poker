@@ -26,10 +26,11 @@ public class Mana extends Carte {
         c[2] = new Carte();
         c[3] = new Carte();
         c[4] = new Carte();
+        Carte cRezerva=new Carte();
         for (int i = 0; i < 3; i++) {
              for (int j = i + 1; j <= 4; j++) {
                 if (c[j].equals(c[i])) {
-                    c[j] = new Carte();
+                    c[j] = cRezerva;
                 }
             }
         }
